@@ -1,0 +1,744 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    color: inherit;
+  }
+
+  h1, h2, h3, .price {
+    color: #672D0A;
+    font-weight: 800;
+}
+
+.logo, h2, h3, .footer-title {
+    font-family: 'Atomic Age', cursive;
+}
+
+header {
+        height: 620px;
+        position: relative;
+    }
+
+    .header-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+    
+      @keyframes fade {
+        from {
+          opacity: 0.9;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+
+      .booking, .read-more {
+        width: 260px;
+        height: 60px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 5px;
+        border: none;  
+    }
+
+    .booking {
+        background-color: #EAD1B7;
+        position: absolute;
+    }
+
+    .read-more {
+        background-color: #672D0A;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .fresh-text {
+        text-align: center;
+        color: #672D0A;
+        margin-bottom: 70px;
+    }
+
+    #about-us {
+        background-image: url(./Project-images/About.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 770px;
+    }
+
+    .about-title {
+        margin-bottom: 16px;
+    }
+    
+    .about-text-one {
+        margin-bottom: 20px;  
+    }
+
+    .about-text-one, .about-text-two {
+        width: 70%;
+    }
+
+    .gallery-title {
+        margin-bottom: 16px;
+    }
+
+    .gallery-text {
+        text-align: center;
+        padding: 37px 0 37px;
+    }
+    
+    .gallery-text > p {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .sign-news {
+        background-color: #EAD1B7;
+        color: #672D0A;
+        font-weight: 800;
+    }
+
+    .sign-title {
+        letter-spacing: 3.2px;
+        margin-bottom: 30px;
+    }
+    
+
+@media screen and (max-width:767px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 767px;
+    }
+
+    #nav-bar {
+    height: 100px;
+    color: #672D0A;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+      .hamburger.active span:nth-child(1) {
+        transform: translate(0px, 0px) rotate(45deg);
+        background-color: #672D0A;
+      }
+      
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(15px);
+      }
+      
+      .hamburger.active span:nth-child(3) {
+        transform: translate(-3px, 1px) rotate(-45deg);
+        background-color: #672D0A;
+      }
+
+      .bar {
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin: 5px auto;
+        border-radius: 50px;
+        background-color:#672D0A;
+        transform-origin: 0 0;
+        transition: 0.4s ease;
+      }
+
+    .nav-links {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        z-index: 1;
+        transition: 0.3s ease-out;
+      }
+      
+      .nav-links.active {
+        left: 0;
+      }
+      
+
+      .nav-links > li {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+
+      .nav-links > li:last-child {
+        margin-bottom: 0;
+      }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .booking {
+        top: 50%;
+        left: 10px;
+    }
+
+    #fresh-food {
+        padding: 30px 0px;
+    }
+ 
+    #about-us {
+        position: relative;
+    }
+    
+    .left-side-about {
+        position: absolute;
+        top: 25%;
+        background-color: #fff;
+        opacity: .7;
+        padding: 30px;
+    }
+    
+    #gallery {
+        padding: 30px 0px 0px;
+    }
+    
+    .gallery-container {
+        display:block;
+      
+    }
+
+    .gallery-image {
+        width: 100%;
+    }
+    
+    .sign-news {
+        padding: 60px 30px;
+    }
+
+    
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    input {
+        background-color: inherit;
+        border: 1px solid  #672D0A;
+        padding: 8px;
+        width: 78%;
+    
+    }
+    
+    .form-input {
+        margin-bottom: 20px;
+    }
+    
+    .submit {
+        color: #672D0A;
+        width: 164px;
+        height: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+     letter-spacing: 1.6px;
+    }
+    
+    #name {
+        margin-left: 20px;
+    }
+    
+    #email {
+        margin-left: 7px;
+    }
+    
+    .submit {
+        margin: 0 auto;
+    }
+    
+    footer {
+        padding: 28px 90px;
+        background: #672D0A;
+        color: #fff;
+    }
+    
+    .footer-title:visited {
+        color: #fff;
+       font-weight: 700;
+    }
+    
+    address {
+        font-style: normal;
+        margin-bottom: 30px;
+    }
+    
+    .footer-desktop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .social-media {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .tel {
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .contacts-icon {
+        display: flex;
+        gap: 16px;
+        align-items: baseline;
+    }
+
+    .contacts {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1185px) {
+    .container {
+        width: 1185px;
+        margin: 0 auto;
+    }
+    
+    .nav-bar.desktop {
+        width: 1185px;
+    }
+    
+    #nav-bar {
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+        /* overflow: hidden; */
+        height: 150px;
+        color: #672D0A;
+        font-weight: 800;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 42px 27px 36px 27px;
+        transition: all 0.4s ease;
+    }
+    
+    .hamburger {
+        display: none;
+      }
+    
+    /* main {
+        margin-top: 150px;
+    } */
+    
+    .logo {
+        font-size: 54px;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 27px;
+    }
+    
+    .nav-link:hover {
+        color: #EAD1B7;
+    }
+    
+    
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+    
+    }
+    
+    header {
+        height: 620px;
+        position: relative;
+    }
+    
+    
+    
+    .booking {
+        right: 60px;
+        bottom: 41px;
+    }
+    
+    .read-more:hover {
+        background-color: #EAD1B7;
+    }
+    
+    .booking:hover {
+        background-color: #672D0A;
+    }
+    
+    #fresh-food {
+        padding: 61px 243px 126px 243px;
+    }
+    
+    .left-side-about {
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        opacity: .7;
+        padding: 60px 0 0 90px;
+    }
+    
+  
+    
+    #gallery {
+        padding: 58px 90px 170px 90px;
+    }
+    
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    
+    .gallery-text, .gallery-image {
+        width: 33%;
+    }
+    
+    .sign-news {
+        padding: 57px 90px 63px 90px;
+    }
+    
+    form {
+        width: 38%;
+    }
+
+    
+    
+    input {
+        background-color: inherit;
+        border: 1px solid  #672D0A;
+        padding: 8px;
+        width: 78%;
+    
+    }
+    
+    .form-input {
+        margin-bottom: 20px;
+    }
+    
+    .submit {
+        color: #672D0A;
+        width: 164px;
+        height: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+    }
+    
+    #name {
+        margin-left: 20px;
+    }
+    
+    #email {
+        margin-left: 7px;
+    }
+    
+    .submit {
+        margin-left: 214px;
+    }
+    
+    footer {
+        padding: 28px 90px;
+        background: #672D0A;
+        color: #fff;
+    }
+    
+    .footer-title {
+       font-weight: 700;
+    }
+
+    
+    address {
+        font-style: normal;
+    }
+    
+    .footer-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .social-media {
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    }
+    
+    .tel {
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .contacts-icon {
+        display: flex;
+        gap: 16px;
+        align-items: baseline;
+    }
+    
+}
+
+@media screen and (min-width:1186px) {
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.nav-bar.desktop {
+    max-width: 1366px;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    color: #672D0A;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 42px 27px 36px 27px;
+    transition: all 0.4s ease;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: none;
+  }
+
+main {
+    margin-top: 150px;
+}
+
+.logo {
+    font-size: 54px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 27px;
+}
+
+.nav-link:hover {
+    color: #EAD1B7;
+}
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+header {
+    height: 620px;
+    position: relative;
+}
+
+
+
+.booking {
+    right: 60px;
+    bottom: 41px;
+}
+
+.read-more:hover {
+    background-color: #EAD1B7;
+}
+
+.booking:hover {
+    background-color: #672D0A;
+}
+
+#fresh-food {
+    padding: 61px 243px 126px 243px;
+}
+
+
+.left-side-about {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .7;
+    padding: 60px 0 0 90px;
+}
+
+#gallery {
+    padding: 58px 90px 170px 90px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+}
+
+
+.gallery-text, .gallery-image {
+    width: 33%;
+}
+
+
+.sign-news {
+    padding: 57px 90px 63px 90px;
+}
+
+form {
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+input {
+    background-color: inherit;
+    border: 1px solid  #672D0A;
+    padding: 8px;
+    width: 78%;
+
+}
+
+.form-input {
+    margin-bottom: 20px;
+}
+
+.submit {
+    color: #672D0A;
+    width: 164px;
+    height: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+ letter-spacing: 1.6px;
+}
+
+#name {
+    margin-left: 20px;
+}
+
+#email {
+    margin-left: 7px;
+}
+
+.submit {
+    margin-left: 266px;
+}
+
+footer {
+    padding: 28px 90px;
+    background: #672D0A;
+    color: #fff;
+}
+
+.footer-title {
+   font-weight: 700;
+}
+
+address {
+    font-style: normal;
+}
+
+.footer-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.tel {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contacts-icon {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+}
+
+}
+
